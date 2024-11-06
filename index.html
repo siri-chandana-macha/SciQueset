@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ScienceQuest: Discover Inventions</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Home Content -->
+  <section id="home">
+    <!-- Logo and Title -->
+    <div id="logo">
+      <img src="logo.jpg" alt="ScienceQuest Logo" id="logoImage">
+      <h1>SciQuest</h1>
+    </div>
+    
+    <p>Welcome to ScienceQuest, a journey through some of the most groundbreaking scientific discoveries and inventions that have shaped our world. Inventions such as the lightbulb, airplane, and the discovery of gravity have changed the course of history.</p>
+
+    
+
+    <div class="inventor">
+      <img src="marie curie.jpg" alt="Marie Curie" class="inventor-image">
+      <blockquote>
+        <p>"In science, we must be daring, for only by taking risks can we uncover the mysteries of the universe and unlock the potential for a better future."</p>
+        <footer>- <strong>Marie Curie</strong></footer>
+      </blockquote>
+    </div>
+
+    <div class="inventor">
+      <img src="leonardo.jpg" alt="Leonardo da Vinci" class="inventor-image">
+      <blockquote>
+        <p>"The helicopter is a design that embodies the dream of flight, a symbol of innovation that will forever shape the future of human transportation."</p>
+        <footer>- <strong>Leonardo da Vinci</strong></footer>
+      </blockquote>
+    </div>
+
+
+    <div class="inventor">
+      <img src="newton.jpg" alt="Isaac Newton" class="inventor-image">
+      <blockquote>
+        <p>"The laws of gravity laid the foundation for our understanding of the physical world, making possible countless discoveries that followed."</p>
+        <footer>- <strong>Isaac Newton</strong></footer>
+      </blockquote>
+    </div>
+
+    <p>Imagine a world without these incredible inventions. Would we be where we are today without the contributions of these brilliant minds? Let's see how much you know about the world of scientific discovery!</p>
+    <button id="startQuizBtnHome" onclick="startQuiz()">Start Quiz</button>
+  </section>
+
+  <!-- Quiz Content -->
+  <section id="quiz" style="display:none;">
+    <h1>Scientific Knowledge Quiz</h1>
+    <br>
+    <form id="quizForm">
+      <div class="question">
+        <p>1. Who developed the theory of relativity?</p>
+        <div class="options">
+          <label><input type="radio" name="q1" value="A"> Isaac Newton</label><br>
+          <label><input type="radio" name="q1" value="B"> Albert Einstein</label><br>
+          <label><input type="radio" name="q1" value="C"> Galileo Galilei</label><br>
+        </div>
+      </div>
+      
+      <div class="question">
+        <p>2. What is the chemical symbol for water?</p>
+        <div class="options">
+          <label><input type="radio" name="q2" value="A"> H2O</label><br>
+          <label><input type="radio" name="q2" value="B"> CO2</label><br>
+          <label><input type="radio" name="q2" value="C"> O2</label><br>
+        </div>
+      </div>
+      
+      <div class="question">
+        <p>3. Who invented the lightbulb?</p>
+        <div class="options">
+          <label><input type="radio" name="q3" value="A"> Alexander Graham Bell</label><br>
+          <label><input type="radio" name="q3" value="B"> Thomas Edison</label><br>
+          <label><input type="radio" name="q3" value="C"> Nikola Tesla</label><br>
+        </div>
+      </div>
+      
+      <div class="question">
+        <p>4. What is the chemical symbol for oxygen?</p>
+        <div class="options">
+          <label><input type="radio" name="q4" value="A"> O2</label><br>
+          <label><input type="radio" name="q4" value="B"> O</label><br>
+          <label><input type="radio" name="q4" value="C"> O3</label><br>
+        </div>
+      </div>
+      
+      <div class="question">
+        <p>5. Who developed the first successful polio vaccine?</p>
+        <div class="options">
+          <label><input type="radio" name="q5" value="A"> Louis Pasteur</label><br>
+          <label><input type="radio" name="q5" value="B"> Jonas Salk</label><br>
+          <label><input type="radio" name="q5" value="C"> Edward Jenner</label><br>
+        </div>
+      </div>
+      
+      
+      <button type="button" onclick="submitQuiz()">Submit Quiz</button>
+    </form>
+  </section>
+
+  <!-- Popup for Score -->
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <p id="scoreMessage"></p>
+      <button onclick="closePopup()">Close</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
